@@ -1,0 +1,37 @@
+$breakpoints: (
+	'xxl': (max-width: 1680px),
+	'xl': (max-width: 1400px),
+	'l': (max-width: 1024px),
+	'm': (max-width: 768px),
+	's': (max-width: 680px),
+	'xs': (max-width: 480px),
+	'xxs': (max-width: 375px),
+);
+
+$font: 'Mont', Segoe Ui, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+$container_width: 1200px;
+
+$gutter: 12px;
+
+$text-night: #262C40;
+$text-light-grey: #7C8793;
+$text-inactive: #B8BDCE;
+
+$azure: #0057B6;
+$azure-focus: #0C6EDA;
+$blue: #003399;
+$deap-sea: #0D356C;
+$skight-sky: #343D57;
+$light-blue: #508BE2;
+$silver-moon: #D7DEE9;
+$polar-star: #EEF1F3;
+$snow: #F7F9FB;
+$rain-sky: #E6EAF0;
+$white: #FFF;
+
+$gradient-blue: linear-gradient(70deg, #003399 0%, #0057B6 50%, #5960EA 100%);
+$gradient-grey: linear-gradient(108deg, #F7F9FB, #E6EAF0);
+$gradient-grey-reverse: linear-gradient(108deg, #E6EAF0, #F7F9FB);
+
+$shadow-card: 0px 20px 20px 0 #D7DEE9;
