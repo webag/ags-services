@@ -10,6 +10,7 @@
 	<img src="/img/intro/car.png" alt="car" class="intro__car">
 </section>
 
+
 <section>
 	<div class="container">
 		<h1>Hello from the other side</h1>
