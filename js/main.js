@@ -211,3 +211,64 @@ $(function () {
 /***********************
  Waypoints END
  ***********************/
+
+
+/***********************
+Tabs BEGIN
+***********************/
+$(function($){
+	const tabsLinks = $('.tabs__link');
+
+	tabsLinks.on('click',function (e) {
+		e.preventDefault();
+		console.log(111);
+		const thisTabs = $(this).parents('.tabs');
+		const thisIndex = $(this).index();
+		selectTab(thisTabs,thisIndex);
+	});
+
+	function selectTab(tabs,index) {
+		const tabsItems = tabs.find('.tabs__item');
+		const tabsLinks = tabs.find('.tabs__link');
+		tabsItems.removeClass('active').eq(index).addClass('active');
+		tabsLinks.removeClass('active').eq(index).addClass('active');
+	}
+});
+/***********************
+Tabs END
+***********************/
+
+
+/***********************
+ Lazy BEGIN
+ ***********************/
+function lazyLoad(){
+	const lazyImgs = $('[data-lazy]');
+	lazyImgs.each(function(){
+		const lazyImage = $(this);
+		const src = lazyImage.attr('data-lazy');
+		lazyImage.attr('src',src);
+	});
+}
+
+function lazyLoadBg(){
+	const lazyImgs = $('[data-lazybg]');
+
+	lazyImgs.each(function(){
+		const lazyImage = $(this);
+		const src = lazyImage.attr('data-lazybg');
+		lazyImage.css('background-image','url('+src+')');
+	});
+}
+
+$(function(){
+	lazyLoad();
+	lazyLoadBg();
+});
+
+$(window).on('load',function () {
+	Waypoint.refreshAll();
+});
+/***********************
+ Lazy END
+ ***********************/

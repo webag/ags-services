@@ -959,6 +959,11 @@ body {
   line-height: 1.5;
   color: #262C40;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
 
 a {
   color: inherit;
@@ -970,11 +975,31 @@ h1, .h1 {
   font-size: 28px;
   line-height: 1.15;
 }
+@media (max-width: 768px) {
+  h1, .h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  h1, .h1 {
+    font-size: 20px;
+  }
+}
 
 h2, .h2 {
   font-weight: bold;
   font-size: 22px;
   line-height: 1.1;
+}
+@media (max-width: 768px) {
+  h2, .h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  h2, .h2 {
+    font-size: 18px;
+  }
 }
 
 h3, .h3 {
@@ -982,10 +1007,41 @@ h3, .h3 {
   font-size: 18px;
   line-height: 1.1;
 }
+@media (max-width: 768px) {
+  h3, .h3 {
+    font-size: 16px;
+  }
+}
+
+.h2-promo {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.1;
+}
+@media (max-width: 1400px) {
+  .h2-promo {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .h2-promo {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .h2-promo {
+    font-size: 20px;
+  }
+}
 
 .lead {
   font-size: 18px;
   line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .lead {
+    font-size: 16px;
+  }
 }
 
 .text-long {
@@ -1001,10 +1057,56 @@ h3, .h3 {
   font-size: 14px;
   line-height: 1.4;
 }
+@media (max-width: 768px) {
+  .text-small {
+    font-size: 12px;
+  }
+}
 
 .text-micro {
   font-size: 12px;
   line-height: 1.3;
+}
+@media (max-width: 768px) {
+  .text-micro {
+    font-size: 11px;
+  }
+}
+
+.sec-title {
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .sec-title {
+    margin-bottom: 30px;
+  }
+}
+
+.s-def {
+  padding: 90px 0;
+}
+@media (max-width: 1400px) {
+  .s-def {
+    padding: 60px 0;
+  }
+}
+
+.s-def-top {
+  padding-top: 90px;
+}
+@media (max-width: 1400px) {
+  .s-def-top {
+    padding-top: 60px;
+  }
+}
+
+.s-def-bottom {
+  padding-bottom: 90px;
+}
+@media (max-width: 1400px) {
+  .s-def-bottom {
+    padding-bottom: 60px;
+  }
 }
 
 .grid-12, .grid-11, .grid-10, .grid-9, .grid-8, .grid-7, .grid-6, .grid-5, .grid-4, .grid-3, .grid-2, .grid-1 {
@@ -2213,6 +2315,59 @@ button::-moz-focus-inner {
   overflow: visible !important;
 }
 
+.tabs__nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #EEF1F3;
+}
+
+.tabs__link {
+  position: relative;
+  padding-bottom: 14px;
+  margin-right: 35px;
+  transition: all 0.3s ease;
+}
+.tabs__link:hover {
+  color: #0C6EDA;
+}
+.tabs__link:last-child {
+  margin-right: 0;
+}
+.tabs__link:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #0057B6;
+  transition: all 0.3s ease;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+.tabs__link.active {
+  color: #0057B6;
+  pointer-events: none;
+}
+.tabs__link.active:after {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.tabs__content {
+  position: relative;
+}
+
+.tabs__item {
+  display: none;
+}
+.tabs__item.active {
+  display: block;
+}
+
 .s-site-header {
   padding: 30px 0;
 }
@@ -2461,6 +2616,83 @@ button::-moz-focus-inner {
 }
 @media (max-width: 480px) {
   .intro__car {
-    width: 80%;
+    width: 70%;
+    bottom: -40px;
   }
+}
+
+.sheme {
+  padding-top: 50px;
+}
+@media (max-width: 768px) {
+  .sheme {
+    padding-top: 30px;
+  }
+}
+
+.sheme__text {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .sheme__text {
+    margin-bottom: 30px;
+  }
+}
+
+.sheme__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.preim {
+  margin-bottom: 48px;
+}
+@media (max-width: 480px) {
+  .preim {
+    margin-bottom: 30px;
+  }
+}
+
+.preim__counter {
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .preim__counter {
+    margin-bottom: 15px;
+  }
+}
+
+.preim__img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .preim__img {
+    margin-bottom: 15px;
+    width: 100px;
+  }
+}
+
+.preim__title {
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .preim__title {
+    margin-bottom: 15px;
+  }
+}
+
+.preim__text {
+  color: #7C8793;
+  max-width: 540px;
+}
+
+.s-gases {
+  background: linear-gradient(108deg, #E6EAF0, #F7F9FB);
 }
