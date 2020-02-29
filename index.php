@@ -3,8 +3,8 @@
 <section class="s-intro">
 	<div class="s-intro__bg"></div>
 	<div class="container intro">
-		<h1 class="intro__title">Технические газы  без&nbsp;капитальных затрат по&nbsp;системе On-Site  или&nbsp;в&nbsp;аренду</h1>
-		<div class="lead intro__lead">Платите только за&nbsp;потребляемый газ по&nbsp;счетчику,  а&nbsp;все&nbsp;обязательства по&nbsp;монтажу, сервису и&nbsp;эксплуатаци  мы&nbsp;берем на&nbsp;себя.</div>
+		<h1 class="intro__title">Технические газы без&nbsp;капитальных затрат по&nbsp;системе On-Site или&nbsp;в&nbsp;аренду</h1>
+		<div class="lead intro__lead">Платите только за&nbsp;потребляемый газ по&nbsp;счетчику, а&nbsp;все&nbsp;обязательства по&nbsp;монтажу, сервису и&nbsp;эксплуатаци мы&nbsp;берем на&nbsp;себя.</div>
 		<a href="#" class="btn">Рассчитать стоимость</a>
 	</div>
 	<img src="/img/intro/car.png" alt="car" class="intro__car">
@@ -102,6 +102,124 @@
 <section class="s-gases s-def">
 	<div class="container">
 		<div class="h2-promo sec-title">Газы, которые мы можем поставить</div>
+
+		<div class="gas-type-grid">
+			<div class="gas-type">
+				<div class="h2 gas-type__title">Азот</div>
+				<div class="text-small gas-type__descr">Концентрация: до&nbsp;99,9999%<br>
+					Состояние: газообразный, жидкий.</div>
+				<span class="gas-type__link">Рассчитать стоимость</span>
+				<div class="gas-type__label gas-type__label--azot h1">N<sub>2</sub></div>
+			</div>
+			<div class="gas-type">
+				<div class="h2 gas-type__title">Кислород</div>
+				<div class="text-small gas-type__descr">Концентрация: до&nbsp;99,9%<br>
+					Состояние: газообразный, жидкий.</div>
+				<span class="gas-type__link">Рассчитать стоимость</span>
+				<div class="gas-type__label gas-type__label--kislorod h1">O<sub>2</sub></div>
+			</div>
+			<div class="gas-type">
+				<div class="h2 gas-type__title">Аргон</div>
+				<div class="text-small gas-type__descr">Концентрация: до&nbsp;99,9999%<br>
+					Состояние: газообразный, жидкий.</div>
+				<span class="gas-type__link">Рассчитать стоимость</span>
+				<div class="gas-type__label gas-type__label--argon h1">Ar</div>
+			</div>
+			<div class="gas-type">
+				<div class="h2 gas-type__title">Водород</div>
+				<div class="text-small gas-type__descr">Концентрация: до&nbsp;99,9999%<br>
+					Состояние: газообразный.</div>
+				<span class="gas-type__link">Рассчитать стоимость</span>
+				<div class="gas-type__label gas-type__label--vodorod h1">H</div>
+			</div>
+			<div class="gas-type">
+				<div class="h2 gas-type__title">Углекислый газ</div>
+				<div class="text-small gas-type__descr">Концентрация: любая.<br>
+					Состояние: газообразный, жидкий.</div>
+				<span class="gas-type__link">Рассчитать стоимость</span>
+				<div class="gas-type__label gas-type__label--uglekis h2">CO<sub>2</sub></div>
+			</div>
+			<div class="gas-type-manager">
+				<div class="gas-type-manager__text">Газовые смеси различной концентрации и&nbsp;конфигурации по&nbsp;Вашему запросу</div>
+				<span class="link">Рассчитать стоимость</span>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<section class="s-def s-products">
+	<div class="container">
+		<div class="h2-promo sec-title">Оборудование</div>
+		<div class="lead s-products__lead">Для производства технических газов мы&nbsp;используем оборудование собственного производства.<br>Срок производства оборудования составляет от&nbsp;2&nbsp;до&nbsp;8&nbsp;месяцев в&nbsp;зависимости от&nbsp;параметров и&nbsp;технического задания.</div>
+
+		<div class="products-grid">
+			<div class="product product--big">
+				<img src="/img/products/1.png" alt="2" class="product__img">
+				<div class="product__content">
+					<div class="lead product__num">01</div>
+					<div class="h2 product__title">Передвижные<br>азотно-компрессорные<br>станции</div>
+					<ul class="product__params">
+						<li>Производительность <nobr>до 15 000 м<sup>3</sup>/ч</nobr></li>
+						<li>Давление до 400 Бар</li>
+						<li>Концентрация до 99,9999%</li>
+					</ul>
+					<div class="link product__link">Подробнее</div>
+				</div>
+			</div>
+			<div class="product">
+				<div class="lead product__num">02</div>
+				<img src="/img/products/2.png" alt="2" class="product__img">
+				<div class="product__content">
+					<div class="h2 product__title">Мембранные азотные станции</div>
+					<ul class="product__params">
+						<li>Производительность до 15 000 м<sup>3</sup>/ч</li>
+						<li>Давление до 400 Бар</li>
+						<li>Концентрация до 99,9%</li>
+					</ul>
+					<div class="link product__link">Подробнее</div>
+				</div>
+			</div>
+			<div class="product">
+				<div class="lead product__num">03</div>
+				<img src="/img/products/3.png" alt="3" class="product__img">
+				<div class="product__content">
+					<div class="h2 product__title">Адсорбционные кисолодные станции</div>
+					<ul class="product__params">
+						<li>Производительность до 5 000 м<sup>3</sup>/ч</li>
+						<li>Давление до 400 Бар</li>
+						<li>Концентрация до 95%</li>
+					</ul>
+					<div class="link product__link">Подробнее</div>
+				</div>
+			</div>
+			<div class="product">
+				<div class="lead product__num">04</div>
+				<img src="/img/products/4.png" alt="4" class="product__img">
+				<div class="product__content">
+					<div class="h2 product__title">Адсорбционные азотные станции</div>
+					<ul class="product__params">
+						<li>Производительность до 15 000 м<sup>3</sup>/ч</li>
+						<li>Давление до 400 Бар</li>
+						<li>Концентрация до 99,9999%</li>
+					</ul>
+					<div class="link product__link">Подробнее</div>
+				</div>
+			</div>
+			<div class="product">
+				<div class="lead product__num">05</div>
+				<img src="/img/products/5.png" alt="5" class="product__img">
+				<div class="product__content">
+					<div class="h2 product__title">Блочно-модульные станции</div>
+					<div class="product__params">
+						Все станции, которые мы производим могут быть изготовлены в блочно-модульном исполнении любой конфигурации.
+					</div>
+					<div class="link product__link">Подробнее</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </section>
 
