@@ -155,7 +155,7 @@
 		<div class="lead s-products__lead">Для производства технических газов мы&nbsp;используем оборудование собственного производства.<br>Срок производства оборудования составляет от&nbsp;2&nbsp;до&nbsp;8&nbsp;месяцев в&nbsp;зависимости от&nbsp;параметров и&nbsp;технического задания.</div>
 
 		<div class="products-grid">
-			<div class="product product--big">
+			<a href="/products/azot-module/" class="product product--big">
 				<img src="/img/products/1.png" alt="2" class="product__img">
 				<div class="product__content">
 					<div class="lead product__num">01</div>
@@ -167,8 +167,8 @@
 					</ul>
 					<div class="link product__link">Подробнее</div>
 				</div>
-			</div>
-			<div class="product">
+			</a>
+			<a href="/products/azot-membrana/" class="product">
 				<div class="lead product__num">02</div>
 				<img src="/img/products/2.png" alt="2" class="product__img">
 				<div class="product__content">
@@ -180,8 +180,8 @@
 					</ul>
 					<div class="link product__link">Подробнее</div>
 				</div>
-			</div>
-			<div class="product">
+			</a>
+			<a href="/products/kislorod-station/" class="product">
 				<div class="lead product__num">03</div>
 				<img src="/img/products/3.png" alt="3" class="product__img">
 				<div class="product__content">
@@ -193,8 +193,8 @@
 					</ul>
 					<div class="link product__link">Подробнее</div>
 				</div>
-			</div>
-			<div class="product">
+			</a>
+			<a href="/products/azot-station/" class="product">
 				<div class="lead product__num">04</div>
 				<img src="/img/products/4.png" alt="4" class="product__img">
 				<div class="product__content">
@@ -206,8 +206,8 @@
 					</ul>
 					<div class="link product__link">Подробнее</div>
 				</div>
-			</div>
-			<div class="product">
+			</a>
+			<a href="/products/blocks/" class="product">
 				<div class="lead product__num">05</div>
 				<img src="/img/products/5.png" alt="5" class="product__img">
 				<div class="product__content">
@@ -217,6 +217,69 @@
 					</div>
 					<div class="link product__link">Подробнее</div>
 				</div>
+			</a>
+		</div>
+
+	</div>
+</section>
+
+
+<section class="s-def-bottom s-steps">
+	<div class="container">
+		<div class="h2-promo sec-title">Как заключить договор</div>
+		<div class="lead s-steps__lead">Срок реализации одного проекта составляет от 1 до 6 месяцев, зависит это от параметров технических газов и готовности площадки заказчика.</div>
+
+		<div class="row">
+			<div class="grid-3 grid-6_m grid-12_xs">
+				<div class="step">
+					<div class="step__header">
+						<div class="step__num">1</div>
+						<img src="/img/steps/1.svg" alt="1" class="step__icon">
+					</div>
+					<div class="h2 step__title">Подготовка технического решения</div>
+					<div class="step__descr text-long">
+						<p>Заказчик заполняет опросный лист, в&nbsp;котором описывает все&nbsp;требования к&nbsp;техническим газам.</p>
+						<p>Далее инженеры компании «АГС» составляют техническое решения выбирая самые энергоэффективные методы снабжения и&nbsp;оборудование для&nbsp;выработки технических газов. </p>
+					</div>
+				</div>
+			</div>
+			<div class="grid-3 grid-6_m grid-12_xs">
+				<div class="step">
+					<div class="step__header">
+						<div class="step__num">2</div>
+						<img src="/img/steps/2.svg" alt="2" class="step__icon">
+					</div>
+					<div class="h2 step__title">Подписание<br>договора</div>
+					<div class="step__descr text-long">
+						<p>После согласования технического решения  и&nbsp;коммерческого предложения инжинер компании АГС посещает площадку заказчика для&nbsp;окончательного утверждения параметров  и&nbsp;подписания договора  на&nbsp;поставку газов.</p>
+					</div>
+				</div>
+			</div>
+			<div class="grid-3 grid-6_m grid-12_xs">
+				<div class="step">
+					<div class="step__header">
+						<div class="step__num">3</div>
+						<img src="/img/steps/3.svg" alt="3" class="step__icon">
+					</div>
+					<div class="h2 step__title">Производство оборудования</div>
+					<div class="step__descr text-long">
+						<p>При наличии необходимого оборудования на&nbsp;скаладе мы отправляем его&nbsp;заказчику  в&nbsp;кратчайшие сроки.</p>
+						<p>При отсутствии необходимого оборудования, мы начинаем производство.</p>
+						<p>Срок производства предварительно обсуждается с&nbsp;заказчиком.</p>
+					</div>
+				</div>
+			</div>
+			<div class="grid-3 grid-6_m grid-12_xs">
+				<div class="step step--last">
+					<div class="step__header">
+						<div class="step__num"><i class="i-check"></i></div>
+						<img src="/img/steps/4.svg" alt="4" class="step__icon">
+					</div>
+					<div class="h2 step__title">Монтаж оборудования  и&nbsp;запуск газа</div>
+					<div class="step__descr text-long">
+						<p>Поставка газа по&nbsp;счетчким или&nbsp;аренда оборудования.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -224,38 +287,13 @@
 </section>
 
 
-<section>
-	<div class="container">
-		<h1>Hello from the other side</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio minima placeat, possimus quasi suscipit! A asperiores dicta fuga necessitatibus nobis numquam obcaecati perspiciatis. Aliquid eaque minima minus modi voluptates.</p>
-		<h2>Hello from the other side</h2>
-		<p class="text-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio minima placeat, possimus quasi suscipit! A asperiores dicta fuga necessitatibus nobis numquam obcaecati perspiciatis. Aliquid eaque minima minus modi voluptates.</p>
-		<p class="text-long">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio minima placeat, possimus quasi suscipit! A asperiores dicta fuga necessitatibus nobis numquam obcaecati perspiciatis. Aliquid eaque minima minus modi voluptates.</p>
-		<h3>Hello from the other side</h3>
-		<p class="text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio minima placeat, possimus quasi suscipit! A asperiores dicta fuga necessitatibus nobis numquam obcaecati perspiciatis. Aliquid eaque minima minus modi voluptates.</p>
-		<p class="text-micro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio minima placeat, possimus quasi suscipit! A asperiores dicta fuga necessitatibus nobis numquam obcaecati perspiciatis. Aliquid eaque minima minus modi voluptates.</p>
-		<h4>Hello from the other side</h4>
-		<ul>
-			<li>Экстренная помощь MIG</li>
-			<li>Экстренная помощь MIG</li>
-			<li>Экстренная помощь MIG</li>
-		</ul>
-		<h5>Hello from the other side</h5>
-		<ol>
-			<li>Экстренная помощь MIG</li>
-			<li>Экстренная помощь MIG</li>
-			<li>Экстренная помощь MIG</li>
-		</ol>
-
-		<a href="#" class="fancy-modal btn" data-src="#modal-order">Открыть order</a>
-		<a href="#" class="fancy-modal btn" data-src="#modal-order">Открыть order</a>
-		<a href="img/img.png" class="fancy btn" data-fancybox="1">Открыть img</a>
-		<a href="img/img.png" class="fancy btn" data-fancybox="1">Открыть img</a>
-		<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fancy-video btn">Открыть youtube</a>
-		<a href="https://yandex.ru/map-widget/v1/-/CBQneLhsOA" class="fancy-map btn">схема проезда</a>
-
-	</div>
-</section>
-
+<div class="lp-actions compensate-for-scrollbar">
+	<a href="#" class="lp-action fancy-modal" data-src="#modal-call" title="Заказать обратный звонок">
+		<i class="i-phone"></i>
+	</a>
+	<a href="#" class="fancy-modal lp-action" data-src="#modal-order" title="Заказать КП">
+		<i class="i-order"></i>
+	</a>
+</div>
 
 <?php include('footer.php'); ?>

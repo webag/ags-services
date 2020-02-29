@@ -26,6 +26,7 @@
 	transition: all 0.3s ease;
 	cursor: pointer;
 	min-height: 500px;
+	-webkit-tap-highlight-color: transparent;
 	@include res(l){
 		min-height: 400px;
 	}

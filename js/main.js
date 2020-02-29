@@ -272,3 +272,18 @@ $(window).on('load',function () {
 /***********************
  Lazy END
  ***********************/
+
+
+/***********************
+ lp actions btns BEGIN
+ ***********************/
+$(function($){
+	$('body').waypoint(function () {
+		$('.lp-actions').toggleClass('active');
+	}, {
+		offset: -500
+	});
+});
+/***********************
+ lp actions btns END
+ ***********************/
