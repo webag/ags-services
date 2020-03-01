@@ -25,12 +25,12 @@ $(function () {
 					send = false;
 				}
 			}
-			if ($(this).is('input[type="tel"]')) {
+			/*if ($(this).is('input[type="tel"]')) {
 				if ($(this).cleanVal().length < 11) {
 					$(this).addClass('error');
 					send = false;
 				}
-			}
+			}*/
 		});
 
 		$(this).find("[data-req='true']").on('focus', function () {
@@ -78,6 +78,7 @@ $(function () {
 							$.fancybox.close();
 						}, 4500);
 						form[0].reset();
+						form.find('.input-group').removeClass('not-empty');
 					}
 					submitBtn.prop('disabled', false);
 				})
@@ -96,7 +97,7 @@ $(function () {
 /***********************
  Input mask BEGIN
 ***********************/
-$(function () {
+/*$(function () {
 	const telInputs = $("input[type='tel']");
 	String.prototype.replaceAt = function(index, replacement) {
 		return this.substr(0, index) + replacement + this.substr(index + replacement.length);
@@ -124,7 +125,7 @@ $(function () {
 			$(this).get(0).value = ""
 		}
 	})
-});
+});*/
 /***********************
  Input mask END
  ***********************/
@@ -287,3 +288,76 @@ $(function($){
 /***********************
  lp actions btns END
  ***********************/
+
+
+/***********************
+Labels BEGIN
+***********************/
+$(function($){
+	const inputs = $('.input-group .input-text');
+	inputs.on('focus',function () {
+		$(this).parent('.input-group').addClass('not-empty');
+	});
+	inputs.on('blur',function () {
+		if ($(this).val().length === 0){
+			$(this).parent('.input-group').removeClass('not-empty');
+		}
+	})
+});
+/***********************
+Labels END
+***********************/
+
+
+/**************************************************
+ Custom File Input
+ ***************************************************/
+$(function($){
+	$('.style-file').each( function(){
+		const thisFileBlock = $(this);
+		const input = thisFileBlock.find('input[type="file"]');
+		const label = thisFileBlock.find('.style-file__text');
+		const label_val = label.html();
+		const deleteBtn = thisFileBlock.find('.style-file__delete');
+
+		input.on('change', function(e){
+			let fileName = '';
+
+			if( this.files && this.files.length > 1 ) {
+				fileName = ( this.getAttribute('data-multiple-caption') || '' ).replace('{count}', this.files.length);
+				thisFileBlock.addClass('style-file--selected');
+			}
+			else if( e.target.value ) {
+				fileName = e.target.value.split('\\').pop();
+				thisFileBlock.addClass('style-file--selected');
+			} else {
+				thisFileBlock.removeClass('style-file--selected');
+			}
+
+			if(fileName) {
+				label.html(fileName);
+			}
+			else {
+				label.html(label_val);
+				thisFileBlock.removeClass('style-file--selected');
+			}
+		});
+
+		// Firefox bug fix
+		input
+			.on( 'focus', function(){ input.addClass( 'has-focus' ); })
+			.on( 'blur', function(){ input.removeClass( 'has-focus' ); });
+
+		deleteBtn.on('click',function (e) {
+			e.stopPropagation();
+			const thisInput = $(this).siblings('[type="file"]');
+			thisInput.val(null);
+			label.html(label_val);
+			thisFileBlock.removeClass('style-file--selected');
+			return false;
+		})
+	});
+});
+/**************************************************
+ End Custom File Input
+ ***************************************************/

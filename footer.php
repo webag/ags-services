@@ -47,25 +47,55 @@
 <!-- Модальные окна -->
 <div class="modals-sec">
 
-	<div id="modal-order" class="modal">
-		<p>Заказать обратный звонок</p>
-		<p>Оставьте заявку и наш администратор свяжется с&nbsp;Вами в течение 10 минут</p>
-		<form class="ajax-form">
-			<input type="hidden" value="Новая заявка" name="form_subject">
-			<input type="text" name="user_name" placeholder="Введите имя" data-label="Имя пользователя" class="input-text" >
-			<input type="email" name="user_email" placeholder="Введите e-mail*" data-label="Email" class="input-text" data-req="true">
-			<input type="tel" name="user_tel" placeholder="Введите телефон*" data-label="Телефон"  class="input-text" data-req="true">
-			<input type="file" name="user_file" data-label="Файл">
-			<button type="submit" class="btn">Отправить</button>
-			<label class="style-check-ios">
-				<input type="checkbox" name="user_policy" data-label="Согласен с условиями" value="yes" data-req="true" checked="">
-				<span>Нажимая кнопку, я даю согласие на&nbsp;обработку персональных данных и&nbsp;соглашаюсь с&nbsp;<a href="#">условиями политики конфиденциальности</a></span>
+	<div id="modal-call" class="modal">
+		<p class="h1 modal__title">Обратный звонок</p>
+		<p class="modal__descr">Оставьте заявку на&nbsp;обратный звонок и&nbsp;мы перезвоним Вам в&nbsp;течение 5&nbsp;минут</p>
+		<form class="ajax-form vertical-form">
+			<input type="hidden" value="Заказ обратного звонка (услуги АГС)" name="form_subject">
+			<label class="input-group">
+				<input type="text" name="user_name" data-label="Имя пользователя" class="input-text">
+				<span class="input-group__label">Ваше имя</span>
 			</label>
+			<label class="input-group">
+				<input type="tel" name="user_tel" data-label="Телефон"  class="input-text" data-req="true">
+				<span class="input-group__label">Телефон*</span>
+			</label>
+			<button type="submit" class="btn">Заказать звонок</button>
+			<div class="form-privacy text-micro">Нажимая кнопку, принимаю<br><a href="/AGS_policy.docx" target="_blank" download>условия пользовательского соглашения</a></div>
 		</form>
 	</div>
 
-	<div id="modal-thanks" class="modal">
-		<p>Спасибо за заявку!</p>
+	<div id="modal-order" class="modal">
+		<p class="h1 modal__title">Заказать проект</p>
+		<p class="modal__descr">Оставьте заявку на&nbsp;просчет проекта и&nbsp;мы свяжемся с&nbsp;Вами для&nbsp;уточнения деталей</p>
+		<form class="ajax-form vertical-form">
+			<input type="hidden" value="Заказ поректа (услуги АГС)" name="form_subject">
+			<label class="input-group">
+				<input type="text" name="user_name" data-label="Имя пользователя" class="input-text">
+				<span class="input-group__label">Ваше имя</span>
+			</label>
+			<label class="input-group">
+				<input type="email" name="user_email" data-label="Email" class="input-text" data-req="true">
+				<span class="input-group__label">E-mail*</span>
+			</label>
+			<label class="input-group">
+				<input type="tel" name="user_tel" data-label="Телефон"  class="input-text" data-req="true">
+				<span class="input-group__label">Телефон*</span>
+			</label>
+			<label class="style-file">
+				<input type="file" name="user_file" data-multiple-caption="{count} файла(ов)" multiple>
+				<i></i>
+				<span class="style-file__text">Прикрепить файл</span>
+				<span class="style-file__delete" title="Очистить">&#10006;</span>
+			</label>
+			<button type="submit" class="btn">Заказать просчет</button>
+			<div class="form-privacy text-micro">Нажимая кнопку, принимаю<br><a href="/AGS_policy.docx" target="_blank" download>условия пользовательского соглашения</a></div>
+		</form>
+	</div>
+
+	<div id="modal-thanks" class="modal modal--thanks">
+		<p class="h1 modal__title">Спасибо за&nbsp;обращение в&nbsp;нашу компанию</p>
+		<p class="modal__descr">Мы уже&nbsp;начали работу по&nbsp;вашей заявке</p>
 	</div>
 
 	<div id="modal-error" class="modal">

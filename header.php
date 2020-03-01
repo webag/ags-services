@@ -36,11 +36,11 @@
 		<img src="/img/logo.svg" alt="Logotype" class="site-header__logo">
 		
 		<nav class="site-header__nav">
-			<a href="#">Что такое On-site</a>
-			<a href="#">Преимущества</a>
-			<a href="#">Газы</a>
-			<a href="#">Оборудование</a>
-			<a href="#">Как заключить договор</a>
+			<a href="#sheme" class="scrollto">Что такое On-site</a>
+			<a href="#preims" class="scrollto">Преимущества</a>
+			<a href="#gases" class="scrollto">Газы</a>
+			<a href="#products" class="scrollto">Оборудование</a>
+			<a href="#steps" class="scrollto">Как заключить договор</a>
 		</nav>
 
 		<div class="site-header__contacts">

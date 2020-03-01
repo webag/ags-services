@@ -5,13 +5,13 @@
 	<div class="container intro">
 		<h1 class="intro__title">Технические газы без&nbsp;капитальных затрат по&nbsp;системе On-Site или&nbsp;в&nbsp;аренду</h1>
 		<div class="lead intro__lead">Платите только за&nbsp;потребляемый газ по&nbsp;счетчику, а&nbsp;все&nbsp;обязательства по&nbsp;монтажу, сервису и&nbsp;эксплуатаци мы&nbsp;берем на&nbsp;себя.</div>
-		<a href="#" class="btn">Рассчитать стоимость</a>
+		<a href="#" class="btn fancy-modal" data-src="#modal-order">Рассчитать стоимость</a>
 	</div>
 	<img src="/img/intro/car.png" alt="car" class="intro__car">
 </section>
 
 
-<section class="s-sheme s-def">
+<section class="s-sheme s-def" id="sheme">
 	<div class="container">
 		<div class="h2-promo sec-title">Схема поставки газов On-site и&nbsp;Аренда</div>
 
@@ -40,7 +40,7 @@
 </section>
 
 
-<section class="s-preims s-def-bottom">
+<section class="s-preims s-def-bottom" id="preims">
 	<div class="container">
 		<div class="h2-promo sec-title">Преимущества договора On-Site</div>
 
@@ -99,47 +99,47 @@
 </section>
 
 
-<section class="s-gases s-def">
+<section class="s-gases s-def" id="gases">
 	<div class="container">
 		<div class="h2-promo sec-title">Газы, которые мы можем поставить</div>
 
 		<div class="gas-type-grid">
-			<div class="gas-type">
+			<div class="gas-type fancy-modal" data-src="#modal-order">
 				<div class="h2 gas-type__title">Азот</div>
 				<div class="text-small gas-type__descr">Концентрация: до&nbsp;99,9999%<br>
 					Состояние: газообразный, жидкий.</div>
 				<span class="gas-type__link">Рассчитать стоимость</span>
 				<div class="gas-type__label gas-type__label--azot h1">N<sub>2</sub></div>
 			</div>
-			<div class="gas-type">
+			<div class="gas-type fancy-modal" data-src="#modal-order">
 				<div class="h2 gas-type__title">Кислород</div>
 				<div class="text-small gas-type__descr">Концентрация: до&nbsp;99,9%<br>
 					Состояние: газообразный, жидкий.</div>
 				<span class="gas-type__link">Рассчитать стоимость</span>
 				<div class="gas-type__label gas-type__label--kislorod h1">O<sub>2</sub></div>
 			</div>
-			<div class="gas-type">
+			<div class="gas-type fancy-modal" data-src="#modal-order">
 				<div class="h2 gas-type__title">Аргон</div>
 				<div class="text-small gas-type__descr">Концентрация: до&nbsp;99,9999%<br>
 					Состояние: газообразный, жидкий.</div>
 				<span class="gas-type__link">Рассчитать стоимость</span>
 				<div class="gas-type__label gas-type__label--argon h1">Ar</div>
 			</div>
-			<div class="gas-type">
+			<div class="gas-type fancy-modal" data-src="#modal-order">
 				<div class="h2 gas-type__title">Водород</div>
 				<div class="text-small gas-type__descr">Концентрация: до&nbsp;99,9999%<br>
 					Состояние: газообразный.</div>
 				<span class="gas-type__link">Рассчитать стоимость</span>
 				<div class="gas-type__label gas-type__label--vodorod h1">H</div>
 			</div>
-			<div class="gas-type">
+			<div class="gas-type fancy-modal" data-src="#modal-order">
 				<div class="h2 gas-type__title">Углекислый газ</div>
 				<div class="text-small gas-type__descr">Концентрация: любая.<br>
 					Состояние: газообразный, жидкий.</div>
 				<span class="gas-type__link">Рассчитать стоимость</span>
 				<div class="gas-type__label gas-type__label--uglekis h2">CO<sub>2</sub></div>
 			</div>
-			<div class="gas-type-manager">
+			<div class="gas-type-manager fancy-modal" data-src="#modal-order">
 				<div class="gas-type-manager__text">Газовые смеси различной концентрации и&nbsp;конфигурации по&nbsp;Вашему запросу</div>
 				<span class="link">Рассчитать стоимость</span>
 			</div>
@@ -149,7 +149,7 @@
 </section>
 
 
-<section class="s-def s-products">
+<section class="s-def s-products" id="products">
 	<div class="container">
 		<div class="h2-promo sec-title">Оборудование</div>
 		<div class="lead s-products__lead">Для производства технических газов мы&nbsp;используем оборудование собственного производства.<br>Срок производства оборудования составляет от&nbsp;2&nbsp;до&nbsp;8&nbsp;месяцев в&nbsp;зависимости от&nbsp;параметров и&nbsp;технического задания.</div>
@@ -224,7 +224,7 @@
 </section>
 
 
-<section class="s-def-bottom s-steps">
+<section class="s-def-bottom s-steps" id="steps">
 	<div class="container">
 		<div class="h2-promo sec-title">Как заключить договор</div>
 		<div class="lead s-steps__lead">Срок реализации одного проекта составляет от 1 до 6 месяцев, зависит это от параметров технических газов и готовности площадки заказчика.</div>
@@ -282,6 +282,127 @@
 				</div>
 			</div>
 		</div>
+
+	</div>
+</section>
+
+
+<section class="s-calc">
+	<div class="container">
+
+		<form class="ajax-form calc">
+			<input type="hidden" value="Заказ расчета стоимости из калькулятора (услуги АГС)" name="form_subject">
+
+			<div class="h2-promo sec-title">Калькулятор</div>
+			<div class="lead calc__lead">Для расчета стоимости и возможности поставки газа необходимо предоставить ряд технических параметров:</div>
+
+			<div class="h2 calc__steptitle">Параметры</div>
+			<div class="calc-param">
+				<div class="calc-param__title">
+					<span class="h2">1.</span><span class="lead">Газ или смесь</span>
+				</div>
+				<div class="calc-param__values">
+					<div class="radio-group">
+						<label class="radio-group__item">
+							<input type="checkbox" name="gas" data-label="Газ или смесь" value="Азот">
+							<span>Азот</span>
+						</label>
+						<label class="radio-group__item">
+							<input type="checkbox" name="gas" data-label="Газ или смесь" value="Кислород">
+							<span>Кислород</span>
+						</label>
+						<label class="radio-group__item">
+							<input type="checkbox" name="gas" data-label="Газ или смесь" value="Аргон">
+							<span>Аргон</span>
+						</label>
+						<label class="radio-group__item">
+							<input type="checkbox" name="gas" data-label="Газ или смесь" value="Водород">
+							<span>Водород</span>
+						</label>
+						<label class="radio-group__item">
+							<input type="checkbox" name="gas" data-label="Газ или смесь" value="Углекислый газ">
+							<span>Углекислый газ</span>
+						</label>
+					</div>
+				</div>
+				<div class="calc-param__note text-micro">Вы можете выбрать один или несколько пунктов. </div>
+			</div>
+			<div class="calc-param__row">
+
+				<div class="calc-param">
+					<div class="calc-param__title">
+						<span class="h2">2.</span><span class="lead">Концентрация</span>
+					</div>
+					<div class="calc-param__values">
+						<label class="input-group">
+							<input type="text" name="concentration" data-label="Концентрация" class="input-text input-text--110">
+							<span class="input-group__label">99,9999%</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="calc-param">
+					<div class="calc-param__title">
+						<span class="h2">3.</span><span class="lead">Производительность</span>
+					</div>
+					<div class="calc-param__values">
+						<label class="input-group">
+							<input type="text" name="proizv" data-label="Производительность" class="input-text input-text--150">
+							<span class="input-group__label">До 15 000 м<sup>3</sup>/ч</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="calc-param">
+					<div class="calc-param__title">
+						<span class="h2">4.</span><span class="lead">Давление (бар)</span>
+					</div>
+					<div class="calc-param__values">
+						<div class="radio-group">
+							<label class="radio-group__item">
+								<input type="radio" name="pressure" data-label="Давление (бар)" value="0 — 10">
+								<span>0 — 10</span>
+							</label>
+							<label class="radio-group__item">
+								<input type="radio" name="pressure" data-label="Давление (бар)" value="10 — 40">
+								<span>10 — 40</span>
+							</label>
+							<label class="radio-group__item">
+								<input type="radio" name="pressure" data-label="Давление (бар)" value="150 — 450">
+								<span>150 — 450</span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="h2 calc__steptitle">Куда отправить расчет</div>
+
+			<div class="row calc__user vertical-form">
+				<div class="grid-4 grid-12_s">
+					<label class="input-group">
+						<input type="text" name="user_name" data-label="Имя пользователя" class="input-text">
+						<span class="input-group__label">Ваше имя</span>
+					</label>
+				</div>
+				<div class="grid-4 grid-12_s">
+					<label class="input-group">
+						<input type="email" name="user_email" data-label="Email" class="input-text" data-req="true">
+						<span class="input-group__label">E-mail*</span>
+					</label>
+				</div>
+				<div class="grid-4 grid-12_s">
+					<label class="input-group">
+						<input type="tel" name="user_tel" data-label="Телефон"  class="input-text" data-req="true">
+						<span class="input-group__label">Телефон*</span>
+					</label>
+				</div>
+			</div>
+
+			<button type="submit" class="btn">Рассчитать стоимость</button>
+
+		</form>
 
 	</div>
 </section>
